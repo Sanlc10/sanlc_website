@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-primary-bg text-neutral-dark;
+    font-family: 'SF Pro Display', -apple-system, system-ui, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F5F1ED;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E5E5E5;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D0D0D0;
+  }
+}
+
+@layer components {
+  /* Card variants */
+  .card-elevated {
+    @apply bg-surface-card rounded-card p-32 shadow-medium;
+    background: rgba(255, 255, 255, 0.98);
+  }
+
+  .card-flat {
+    @apply bg-surface-card rounded-card-sm p-24 shadow-soft;
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .card-inverted {
+    @apply bg-neutral-dark-surface rounded-card p-32 shadow-medium text-white;
+  }
+
+  /* Button variants */
+  .btn-primary {
+    @apply bg-interactive-primary text-white rounded-button px-32 py-16 text-body-sm font-medium;
+    @apply transition-all duration-250 ease-smooth;
+    @apply hover:shadow-medium hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply bg-interactive-secondary text-neutral-dark rounded-button px-24 py-12 text-body-sm font-medium;
+    @apply transition-all duration-250 ease-smooth;
+    @apply hover:bg-neutral-light hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-icon {
+    @apply w-12 h-12 rounded-full flex items-center justify-center;
+    @apply bg-black bg-opacity-5 transition-all duration-250 ease-smooth;
+    @apply hover:bg-opacity-10 active:scale-95;
+  }
+
+  /* Input styles */
+  .input-field {
+    @apply bg-[#F8F8F8] border-none rounded-input px-24 py-16 text-body-sm;
+    @apply placeholder:text-neutral-medium placeholder:opacity-70;
+    @apply focus:outline-none focus:shadow-soft focus:ring-2 focus:ring-accent-primary focus:ring-opacity-20;
+    @apply transition-all duration-250 ease-smooth;
+  }
+
+  .textarea-field {
+    @apply input-field resize-none;
+  }
+
+  /* Decorative gradient */
+  .gradient-accent {
+    background: linear-gradient(180deg, #E8F4FF 0%, #4A90E2 100%);
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply backdrop-blur-glass bg-white bg-opacity-10;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Animation utilities */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Wave animation */
+  .animate-wave {
+    animation: wave 8s ease-in-out infinite;
+  }
+
+  @keyframes wave {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-2%);
+    }
+  }
+
+  /* Hover scale effect */
+  .hover-lift {
+    @apply transition-all duration-250 ease-smooth;
+    @apply hover:shadow-card-hover hover:-translate-y-1;
+  }
+
+  /* Carousel infinite scroll animations */
+  .carousel-next {
+    animation: slideLeft 600ms ease-in-out forwards;
+  }
+
+  .carousel-reset {
+    transition: none !important;
+    transform: translateX(0) !important;
+  }
+
+  @keyframes slideLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-33.333% - 24px));
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}

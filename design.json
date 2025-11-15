@@ -1,0 +1,316 @@
+{
+  "designSystem": {
+    "name": "Modern Neumorphic Card System",
+    "version": "1.0.0",
+    "description": "A contemporary mobile UI design system featuring soft, elevated cards with neumorphic influences, clean typography, and minimalist aesthetic"
+  },
+  "colorPalette": {
+    "primary": {
+      "background": "#F5F1ED",
+      "description": "Warm, light beige/cream serving as the primary canvas",
+      "usage": "Main background, creates soft and welcoming atmosphere"
+    },
+    "surfaces": {
+      "card": "#FFFFFF",
+      "cardOpacity": "95-98%",
+      "description": "White or near-white with subtle transparency",
+      "elevation": "Soft shadows creating depth"
+    },
+    "accent": {
+      "primary": "#4A90E2",
+      "gradient": "linear-gradient(180deg, #E8F4FF 0%, #4A90E2 100%)",
+      "description": "Vibrant blue used for highlights and focal points",
+      "usage": "Call-to-action elements, decorative graphics"
+    },
+    "neutral": {
+      "dark": "#1A1A1A",
+      "darkSurface": "#2C2C2C",
+      "mediumGray": "#6B6B6B",
+      "lightGray": "#E5E5E5",
+      "description": "Range of grays for text hierarchy and subtle elements"
+    },
+    "interactive": {
+      "buttonPrimary": "#1A1A1A",
+      "buttonSecondary": "#E8E8E8",
+      "facebook": "#F0F0F0",
+      "description": "Colors for interactive elements"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "SF Pro Display, -apple-system, system-ui",
+      "fallback": "Helvetica Neue, Arial, sans-serif",
+      "characteristics": "Modern, clean sans-serif with excellent readability"
+    },
+    "hierarchy": {
+      "displayLarge": {
+        "fontSize": "72-96px",
+        "fontWeight": "300-400",
+        "lineHeight": "0.9-1.0",
+        "letterSpacing": "-2px",
+        "usage": "Large date numbers, hero elements",
+        "example": "17th"
+      },
+      "heading1": {
+        "fontSize": "32-42px",
+        "fontWeight": "400-500",
+        "lineHeight": "1.1",
+        "letterSpacing": "-0.5px",
+        "usage": "Primary headings, card titles"
+      },
+      "heading2": {
+        "fontSize": "24-28px",
+        "fontWeight": "500-600",
+        "lineHeight": "1.2",
+        "usage": "Section headers, prominent labels"
+      },
+      "body": {
+        "fontSize": "15-17px",
+        "fontWeight": "400",
+        "lineHeight": "1.5",
+        "usage": "General text, descriptions"
+      },
+      "label": {
+        "fontSize": "13-15px",
+        "fontWeight": "400-500",
+        "lineHeight": "1.4",
+        "usage": "Input labels, small headers"
+      },
+      "caption": {
+        "fontSize": "11-13px",
+        "fontWeight": "400",
+        "lineHeight": "1.3",
+        "usage": "Helper text, metadata"
+      }
+    },
+    "styleNotes": {
+      "alignment": "Mix of left-aligned for readability and center-aligned for emphasis",
+      "textColor": "High contrast with background, typically dark gray or black on light surfaces",
+      "hierarchy": "Clear visual hierarchy through size, weight, and spacing"
+    }
+  },
+  "layout": {
+    "cardSystem": {
+      "type": "Floating card-based layout",
+      "characteristics": [
+        "Cards float above background with elevation",
+        "Generous padding and breathing room",
+        "Clear separation between content blocks",
+        "Asymmetric layouts for visual interest"
+      ]
+    },
+    "spacing": {
+      "baseUnit": "8px",
+      "scale": [4, 8, 12, 16, 24, 32, 48, 64],
+      "cardPadding": "24-32px",
+      "elementSpacing": "16-24px",
+      "sectionSpacing": "32-48px"
+    },
+    "grid": {
+      "columns": "Flexible, often single column on mobile",
+      "gutters": "16-24px",
+      "margins": "16-24px on mobile, 32-48px on larger screens"
+    },
+    "cardStructure": {
+      "borderRadius": "24-32px",
+      "aspectRatio": "Varies by content, often 3:4 or 4:5 for portrait cards",
+      "maxWidth": "420-480px for mobile cards",
+      "elevation": "Multiple levels through shadows"
+    }
+  },
+  "components": {
+    "card": {
+      "style": "Neumorphic-inspired with soft shadows",
+      "background": "White or light with subtle gradient",
+      "borderRadius": "24-32px",
+      "padding": "24-32px",
+      "shadow": "0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04)",
+      "variants": {
+        "elevated": "Higher shadow for primary content",
+        "flat": "Minimal shadow for secondary content",
+        "inverted": "Dark background for contrast"
+      }
+    },
+    "button": {
+      "primary": {
+        "background": "#1A1A1A",
+        "color": "#FFFFFF",
+        "borderRadius": "24-28px",
+        "padding": "14-16px 28-32px",
+        "fontSize": "15-17px",
+        "fontWeight": "500",
+        "transition": "all 0.2s ease",
+        "hover": "Slight scale and shadow increase"
+      },
+      "secondary": {
+        "background": "#E8E8E8",
+        "color": "#1A1A1A",
+        "borderRadius": "24-28px",
+        "padding": "12-14px 24-28px"
+      },
+      "social": {
+        "background": "#F0F0F0",
+        "icon": "Brand-specific",
+        "borderRadius": "20-24px",
+        "padding": "12px 20px",
+        "display": "flex with icon and text"
+      },
+      "iconButton": {
+        "shape": "Circle",
+        "size": "48-56px",
+        "background": "rgba(0, 0, 0, 0.05)",
+        "icon": "24px"
+      }
+    },
+    "input": {
+      "style": "Minimal with subtle background",
+      "background": "#F8F8F8",
+      "border": "none or 1px solid rgba(0,0,0,0.06)",
+      "borderRadius": "16-20px",
+      "padding": "14-16px 20px",
+      "fontSize": "15-16px",
+      "focusState": "Subtle shadow or border highlight",
+      "placeholder": "Medium gray, slightly transparent"
+    },
+    "decorativeElements": {
+      "type": "Geometric shapes and gradients",
+      "characteristics": [
+        "Large circular or semi-circular gradients",
+        "Smooth color transitions",
+        "Strategic placement for visual interest",
+        "Often blue to light blue gradients"
+      ],
+      "usage": "Accent pieces, visual hierarchy, breaking monotony"
+    },
+    "iconography": {
+      "style": "Minimalist, line-based or simple filled",
+      "size": "20-24px for small, 32-40px for large",
+      "strokeWidth": "1.5-2px for outlined icons",
+      "color": "Typically matches text color or accent"
+    }
+  },
+  "visualEffects": {
+    "shadows": {
+      "soft": "0 4px 16px rgba(0, 0, 0, 0.06)",
+      "medium": "0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04)",
+      "strong": "0 16px 48px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06)",
+      "usage": "Create depth hierarchy, never harsh or dark"
+    },
+    "gradients": {
+      "type": "Soft, subtle linear gradients",
+      "direction": "Typically vertical (180deg) or diagonal",
+      "stops": "2-3 color stops with smooth transitions",
+      "opacity": "Often combined with transparency for ethereal effect"
+    },
+    "blur": {
+      "glassmorphism": "backdrop-filter: blur(20-40px)",
+      "usage": "Overlays, modals, floating elements"
+    },
+    "transitions": {
+      "duration": "200-300ms",
+      "easing": "ease-in-out or cubic-bezier(0.4, 0, 0.2, 1)",
+      "properties": "transform, opacity, box-shadow"
+    }
+  },
+  "designPrinciples": {
+    "philosophy": [
+      "Clean and minimal aesthetic with purposeful whitespace",
+      "Soft, approachable visual language through rounded corners and subtle shadows",
+      "Clear information hierarchy through size, weight, and spacing",
+      "Balance between decoration and functionality",
+      "Emphasis on readability and accessibility"
+    ],
+    "spatialOrganization": [
+      "Generous padding creates breathing room",
+      "Asymmetric layouts add visual interest",
+      "Clear visual grouping of related elements",
+      "Strategic use of negative space"
+    ],
+    "colorUsage": [
+      "Predominantly neutral palette with strategic color accents",
+      "High contrast for readability",
+      "Color used to guide attention and create hierarchy",
+      "Warm, inviting base tones"
+    ],
+    "interactivity": [
+      "Clear affordances for interactive elements",
+      "Subtle hover and active states",
+      "Smooth transitions for state changes",
+      "Tactile feel through neumorphic influences"
+    ]
+  },
+  "responsiveStrategy": {
+    "breakpoints": {
+      "mobile": "320-428px",
+      "tablet": "768-1024px",
+      "desktop": "1280px+"
+    },
+    "scaling": {
+      "typography": "Fluid scaling between breakpoints",
+      "spacing": "Proportional scaling maintaining ratios",
+      "cards": "Width adjusts, padding scales down slightly on smaller screens"
+    },
+    "adaptations": [
+      "Single column layout on mobile",
+      "Multi-column grid on tablet and desktop",
+      "Touch targets minimum 44x44px on mobile",
+      "Reduced padding on smaller screens while maintaining hierarchy"
+    ]
+  },
+  "accessibility": {
+    "contrast": {
+      "textOnLight": "Minimum 4.5:1 ratio",
+      "textOnDark": "Minimum 4.5:1 ratio",
+      "interactiveElements": "Clear visual distinction"
+    },
+    "touchTargets": {
+      "minimum": "44x44px",
+      "preferred": "48x48px",
+      "spacing": "Adequate space between interactive elements"
+    },
+    "focusStates": {
+      "visible": "Clear focus indicators",
+      "style": "Subtle outline or shadow increase"
+    }
+  },
+  "contentPatterns": {
+    "informationDensity": "Low to medium, prioritizing readability",
+    "textLength": {
+      "headings": "Short and descriptive (2-5 words)",
+      "body": "Concise paragraphs (2-4 lines)",
+      "captions": "Brief helper text (1-2 lines)"
+    },
+    "visualHierarchy": [
+      "Primary content: Large, bold, prominent placement",
+      "Secondary content: Medium size, standard weight",
+      "Tertiary content: Smaller, lighter weight or gray"
+    ]
+  },
+  "implementationNotes": {
+    "framework": "Suitable for React, React Native, Flutter, SwiftUI",
+    "cssApproach": "CSS-in-JS or utility classes (Tailwind compatible)",
+    "animations": "Framer Motion, React Spring, or CSS transitions",
+    "considerations": [
+      "Use CSS custom properties for theming flexibility",
+      "Implement design tokens for consistency",
+      "Consider dark mode variants",
+      "Ensure all interactive elements have proper states",
+      "Test on actual devices for shadow and blur rendering"
+    ]
+  },
+  "usageGuidelines": {
+    "whenToUse": [
+      "Mobile-first applications",
+      "Consumer-facing products",
+      "Modern, lifestyle-oriented brands",
+      "Apps prioritizing visual appeal and user experience"
+    ],
+    "bestPractices": [
+      "Maintain consistent spacing using the 8px base unit",
+      "Use shadows sparingly to avoid visual clutter",
+      "Keep cards focused on single tasks or content blocks",
+      "Ensure adequate contrast for accessibility",
+      "Test with real content to verify hierarchy works"
+    ]
+  }
+}
