@@ -1,0 +1,23 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#F0F9FF"/>
+
+  <!-- Header bar -->
+  <rect width="1200" height="80" fill="#0EA5E9"/>
+
+  <!-- Medical cross icon -->
+  <circle cx="600" cy="300" r="100" fill="#0EA5E9" opacity="0.1"/>
+  <rect x="580" y="240" width="40" height="120" rx="4" fill="#0EA5E9"/>
+  <rect x="560" y="260" width="80" height="40" rx="4" fill="#0EA5E9"/>
+
+  <!-- Text elements -->
+  <rect x="450" y="430" width="300" height="30" rx="4" fill="#0EA5E9" opacity="0.3"/>
+  <rect x="500" y="480" width="200" height="20" rx="4" fill="#0EA5E9" opacity="0.2"/>
+
+  <!-- Decorative elements -->
+  <circle cx="200" cy="500" r="50" fill="#0EA5E9" opacity="0.1"/>
+  <circle cx="1000" cy="200" r="70" fill="#0EA5E9" opacity="0.1"/>
+
+  <!-- Bottom accent -->
+  <rect y="595" width="1200" height="80" fill="#0EA5E9" opacity="0.1"/>
+</svg>

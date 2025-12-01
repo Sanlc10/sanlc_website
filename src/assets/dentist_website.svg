@@ -1,0 +1,23 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#F0FDFA"/>
+
+  <!-- Header bar -->
+  <rect width="1200" height="80" fill="#14B8A6"/>
+
+  <!-- Tooth icon -->
+  <path d="M600 200 Q580 220 580 260 Q580 300 590 340 Q595 360 600 380 Q605 360 610 340 Q620 300 620 260 Q620 220 600 200 Z" fill="#14B8A6" opacity="0.3"/>
+  <path d="M550 220 Q530 240 530 280 Q530 320 540 360 Q545 380 550 400 Q555 380 560 360 Q570 320 570 280 Q570 240 550 220 Z" fill="#14B8A6" opacity="0.2"/>
+  <path d="M650 220 Q630 240 630 280 Q630 320 640 360 Q645 380 650 400 Q655 380 660 360 Q670 320 670 280 Q670 240 650 220 Z" fill="#14B8A6" opacity="0.2"/>
+
+  <!-- Text elements -->
+  <rect x="450" y="450" width="300" height="30" rx="4" fill="#14B8A6" opacity="0.3"/>
+  <rect x="500" y="500" width="200" height="20" rx="4" fill="#14B8A6" opacity="0.2"/>
+
+  <!-- Decorative circles -->
+  <circle cx="250" cy="450" r="60" fill="#14B8A6" opacity="0.1"/>
+  <circle cx="950" cy="250" r="80" fill="#14B8A6" opacity="0.1"/>
+
+  <!-- Bottom accent -->
+  <rect y="595" width="1200" height="80" fill="#14B8A6" opacity="0.1"/>
+</svg>

@@ -1,6 +1,9 @@
 import honeyCompany from '../assets/honey_company.png';
 import coffeeShop from '../assets/coffee_shop.png';
 import pizzaRestaurant from '../assets/pizza_restaurant.png';
+import doctorWebsite from '../assets/doc_web.png';
+import dentistWebsite from '../assets/dentist_web.png';
+import pastesWebsite from '../assets/pastes_store.png';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations/translations';
 
@@ -19,6 +22,18 @@ const Projects = () => {
     {
       image: pizzaRestaurant,
       translationKey: 'pizzaRestaurant'
+    },
+    {
+      image: doctorWebsite,
+      translationKey: 'doctorWebsite'
+    },
+    {
+      image: dentistWebsite,
+      translationKey: 'dentistWebsite'
+    },
+    {
+      image: pastesWebsite,
+      translationKey: 'pastesWebsite'
     }
   ];
 

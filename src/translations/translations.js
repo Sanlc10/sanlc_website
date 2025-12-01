@@ -55,6 +55,24 @@ export const translations = {
         tags: ['React', 'Firebase', 'Maps API'],
         url: 'https://obramaestrapizzeria.vercel.app/'
       },
+      doctorWebsite: {
+        title: 'Doctor Website',
+        description: 'Sitio web médico profesional con sistema de citas en línea, perfiles de doctores y portal de pacientes.',
+        tags: ['React', 'Tailwind', 'Healthcare'],
+        url: 'https://doc-web-template-3.vercel.app/'
+      },
+      dentistWebsite: {
+        title: 'Dentist Website',
+        description: 'Sitio web de clínica dental moderna con galería de servicios, reservas en línea y testimonios de pacientes.',
+        tags: ['Next.js', 'UI/UX', 'Medical'],
+        url: 'https://mac-dent-website.vercel.app/'
+      },
+      pastesWebsite: {
+        title: 'Pastes Website',
+        description: 'Plataforma de e-commerce para venta de pastes artesanales con catálogo dinámico y sistema de pedidos.',
+        tags: ['React', 'E-commerce', 'Food'],
+        url: 'https://miodemi-pastes.vercel.app/'
+      },
       viewAll: 'Ver Todos los Proyectos'
     },
     contact: {
@@ -141,6 +159,24 @@ export const translations = {
         description: 'Restaurant website with custom pizza builder, delivery tracking, and table reservations.',
         tags: ['React', 'Firebase', 'Maps API'],
         url: 'https://obramaestrapizzeria.vercel.app/'
+      },
+      doctorWebsite: {
+        title: 'Doctor Website',
+        description: 'Professional medical website with online appointment system, doctor profiles, and patient portal.',
+        tags: ['React', 'Tailwind', 'Healthcare'],
+        url: 'https://doc-web-template-3.vercel.app/'
+      },
+      dentistWebsite: {
+        title: 'Dentist Website',
+        description: 'Modern dental clinic website with service gallery, online booking, and patient testimonials.',
+        tags: ['Next.js', 'UI/UX', 'Medical'],
+        url: 'https://mac-dent-website.vercel.app/'
+      },
+      pastesWebsite: {
+        title: 'Pastes Website',
+        description: 'E-commerce platform for artisanal pastes with dynamic catalog and ordering system.',
+        tags: ['React', 'E-commerce', 'Food'],
+        url: 'https://miodemi-pastes.vercel.app/'
       },
       viewAll: 'View All Projects'
     },
